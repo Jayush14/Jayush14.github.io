@@ -654,7 +654,7 @@
 
 
     <section id="Send_Message" class="section scrollspy">
-      <h3 style="background-color: #33186B; color: #C499F3;">Send Message</h3>
+      <h3 style="background-color: #33186B; color: #C499F3;">Message</h3>
       <div class="container">
         <div class="contact-form"
           style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
@@ -676,7 +676,7 @@
                 style="width: 100%; padding: 15px; border: 2px solid #C499F3; border-radius: 6px; box-sizing: border-box; resize: vertical; font-size: 16px; height: 200px;"></textarea>
             </div>
             <div style="margin-top: auto;">
-              <input type="submit" value="Submit"
+              <input type="submit" value="Send"
                 style="background-color: #7360DF; color: #F2AFEF; padding: 20px; border: solid #33186B; border-radius: 6px; cursor: pointer; font-size: 18px;">
             </div>
           </form>
@@ -685,46 +685,45 @@
     </section>
 
 
-    <section id="contact" class="section scrollspy full-height">
+    <section id="contact-section" class="section scrollspy full-height">
       <h3 style="background-color: #33186B; color: #C499F3;">Contact</h3>
-      <div class="container"
-        style="display: flex; justify-content: space-between; align-items: stretch; flex-wrap: wrap;">
+      <div class="container">
         <div class="contact-info">
           <!-- Your existing contact information here -->
           <p>
             <a aria-label="Call Ayush" data-position="top" data-tooltip="Call Ayush"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-                aria-label="Call Ayush">+91- 8878413684</a></a>
+                aria-label="Call Ayush" >+91- 8878413684</a></a>
           </p>
           <p>
             <a aria-label="Email Ayush" href="mailto: j.ayush790@gmail.com" target="_blank" data-position="top"
-              data-tooltip="Email Ayush" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                class="fa fa-envelope"></i><a aria-label="Email Ayush" href="mailto: j.ayush790@gmail.com"
-                class="hoverline">j.ayush790@gmail.com</a></a>
+              data-tooltip="Email Ayush"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-envelope"></i><a
+                aria-label="Email Ayush" href="mailto: j.ayush790@gmail.com" class="hoverline">j.ayush790@gmail.com</a></a>
           </p>
           <p>
-            <a aria-label="View Ayushon GitHub" href="https://github.com/Jayush14" target="_blank" data-position="top"
-              data-tooltip="View Ayushon GitHub"
-              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                class="fa fa-github"></i><a aria-label="Ayushon Github" href="https://github.com/Jayush14"
-                class="hoverline" target="_blank">Jayush14</a></a>
+            <a aria-label="View Ayush on GitHub" href="https://github.com/Jayush14" target="_blank" data-position="top"
+              data-tooltip="View Ayush on GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+                aria-label="Ayushon Github" href="https://github.com/Jayush14" class="hoverline" target="_blank">Jayush14</a></a>
           </p>
           <p>
-            <a aria-label="View Ayushon LinkedIn" href="https://www.linkedin.com/in/jayush14/" target="_blank"
-              data-position="top" data-tooltip="View Ayushon LinkedIn"
+            <a aria-label="View Ayush on LinkedIn" href="https://www.linkedin.com/in/jayush14/" target="_blank"
+              data-position="top" data-tooltip="View Ayush on LinkedIn"
               class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                 class="fa fa-linkedin"></i><a aria-label="Ayushon LinkedIn" href="https://www.linkedin.com/in/jayush14/"
                 class="hoverline" target="_blank">jayush14</a></a>
           </p>
+          <p>
+            <a aria-label="View Ayush Resume" href="/resume/Ayush Jain_CV.pdf" target="_blank" data-position="top"
+              data-tooltip="View Ayush Resume"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="mdi-file-folder-open small"></i><a
+                aria-label="Ayushon Github" href="https://github.com/Jayush14" class="hoverline" target="_blank">Ayush Jain</a></a>
+          </p>
         </div>
-
-
-
-
       </div>
-
-
     </section>
+    
 
 
 
@@ -757,6 +756,37 @@
       })
     })
   </script>
+
+<style>
+  /* Default styles */
+  #contact-section #contact {
+    text-align: left;
+  }
+
+  #contact-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  #contact-section .contact-info {
+    /* Your existing styles */
+  }
+
+  /* Centering styles for mobile view */
+  @media only screen and (max-width: 600px) {
+    #contact-section #contact {
+      text-align: center;
+    }
+
+    #contact-section .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
 </body>
 
 </html>
